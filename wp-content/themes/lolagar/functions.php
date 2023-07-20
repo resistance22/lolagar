@@ -141,8 +141,11 @@ add_action( 'widgets_init', 'lolagar_widgets_init' );
 function lolagar_scripts() {
 	wp_enqueue_style( 'lolagar-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'lolagar-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'swiper-style', get_template_directory_uri() . '/libs/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'lolagar-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'swiper-js', get_template_directory_uri() . '/libs/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'lolagar-js', get_template_directory_uri() . '/js/lolagar.js', array('swiper-js'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -175,4 +178,15 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+
+function fa_number($number)
+{
+  if ( !is_numeric($number) || empty($number) ) return '۰';
+  
+  $en = array("0","1","2","3","4","5","6","7","8","9");
+  $fa = array("۰","۱","۲","۳","۴","۵","۶","۷","۸","۹");
+  
+  return str_replace($en, $fa, $number);
 }

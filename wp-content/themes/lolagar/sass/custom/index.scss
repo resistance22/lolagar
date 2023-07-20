@@ -1,0 +1,250 @@
+@import './_mixins';
+
+@font-face {
+  font-family: 'SG Kara';
+  src: url('./fonts/SGKara-SemiBold.woff2') format('woff2'),
+    url('./fonts/SGKara-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SG Kara';
+  src: url('./fonts/SGKara-Regular.woff2') format('woff2'),
+    url('./fonts/SGKara-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SG Kara';
+  src: url('./fonts/SGKara-Light.woff2') format('woff2'),
+    url('./fonts/SGKara-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'SG Kara';
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.site-branding {
+  position: relative;
+}
+
+.languages {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+
+  .lang-fa {
+    flex: 50% 0 0;
+    background-color: #000;
+
+    .lang-link {
+      justify-content: right;
+    }
+  }
+
+  .lang-en {
+    flex: 50% 0 0;
+    background-color: #000;
+
+  }
+
+  .lang-link {
+    background-color: #000;
+    display: flex;
+    padding: 4px;
+  }
+}
+
+#logo {
+  width: 115px;
+  margin: 0 auto;
+  background: #af3717;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 50px 25px 0 25px;
+  height: 160px;
+  margin-bottom: 42px;
+  position: relative;
+
+  svg {
+
+    path,
+    rect,
+    polygon {
+      fill: white;
+    }
+  }
+}
+
+.swiper {
+  width: 100vw;
+}
+
+.swiper-slide {
+  width: 56px !important;
+}
+
+.food-type-item {
+  transition: all 0.5s ease-out;
+  display: inline-block;
+  width: 63px;
+
+  .food-type-icon {
+    background-color: $color__main_orange;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin: 0;
+    margin-bottom: 13px;
+
+    svg {
+      width: 100%;
+      height: 60%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &.active {
+    p {
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+}
+
+
+
+
+nav.food-types {
+  margin-bottom: 25px;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
+}
+
+.food-type-section {
+  margin-bottom: 50px;
+}
+
+.food-type-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  p {
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.food-section-cont {
+  display: flex;
+  flex-wrap: wrap;
+
+  .food-item {
+    flex: 100% 0 0;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+    @include xs {
+      padding: 0 15px;
+    }
+
+    @include sm {
+      padding: 0 25px;
+    }
+
+
+
+    .food-item-inner {
+      background-color: $color__main_cream;
+      display: flex;
+    }
+
+    .food-image {
+      flex: 122px 0 0;
+      height: 122px;
+      width: 122px;
+    }
+
+    .food-data {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+
+      h2 {
+        font-size: 14px;
+      }
+
+      .content {
+        font-size: 10px;
+        flex-grow: 1;
+        font-weight: 100;
+      }
+
+      .price {
+        font-size: 13px;
+        text-align: left;
+      }
+    }
+
+    @include md {
+      flex: 50% 0 0;
+    }
+
+    @include lg {
+      flex: 33.33% 0 0;
+    }
+  }
+}

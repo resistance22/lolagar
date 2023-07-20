@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'SG Kara';
+    src: url('SGKara-SemiBold.woff2') format('woff2'),
+        url('SGKara-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SG Kara';
+    src: url('SGKara-Regular.woff2') format('woff2'),
+        url('SGKara-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SG Kara';
+    src: url('SGKara-Light.woff2') format('woff2'),
+        url('SGKara-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,11 @@
+@import './style.scss';
+
+.languages {
+  flex-direction: row-reverse;
+}
+
+.lang-en {
+  .lang-link {
+    justify-content: left;
+  }
+}
