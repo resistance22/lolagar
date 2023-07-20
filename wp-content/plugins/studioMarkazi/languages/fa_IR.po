@@ -1,0 +1,194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-05-19 16:08+0330\n"
+"PO-Revision-Date: 2023-05-19 16:12+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-KeywordsList: __;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: includes/acf\n"
+
+#: includes/taxonomies.php:7 post-types.php:49
+msgid "Product Types"
+msgstr "نوع محصول"
+
+#: includes/taxonomies.php:8 includes/taxonomies.php:20 post-types.php:50
+#: post-types.php:59
+msgid "Product Type"
+msgstr "نوع محصول"
+
+#: includes/taxonomies.php:9 post-types.php:51
+msgid "Search Product Types"
+msgstr "جستجوی نوع محصول"
+
+#: includes/taxonomies.php:10 post-types.php:52
+msgid "All Product Types"
+msgstr "تمام انواع محصول"
+
+#: includes/taxonomies.php:11
+msgid "View Product Type"
+msgstr "مشاهده‌ی نوع محصول"
+
+#: includes/taxonomies.php:12 post-types.php:53
+msgid "Parent Product Type"
+msgstr "نوع محصول والد"
+
+#: includes/taxonomies.php:13 post-types.php:54
+msgid "Parent Product Type:"
+msgstr "نوع محصول والد:"
+
+#: includes/taxonomies.php:14 post-types.php:55
+msgid "Edit Product Type"
+msgstr "ویرایش نوع محصول"
+
+#: includes/taxonomies.php:15 post-types.php:56
+msgid "Update Product Type"
+msgstr "به روزرسانی نوع محصول"
+
+#: includes/taxonomies.php:16 post-types.php:57
+msgid "Add New Product Type"
+msgstr "اضافه نمودن نوع محصول"
+
+#: includes/taxonomies.php:17 post-types.php:58
+msgid "New Product Type Name"
+msgstr "نام نوع محصول جدید"
+
+#: includes/taxonomies.php:18
+msgid "No Product Types Found"
+msgstr "هیچ نوع محصولی یافت نشد"
+
+#: includes/taxonomies.php:19
+msgid "Back to Product Types"
+msgstr "بازگشت به نوع محصول"
+
+#: post-types.php:5 post-types.php:6 post-types.php:7 post-types.php:8
+msgid "Product"
+msgstr "محصول"
+
+#: post-types.php:9
+msgid "Add New"
+msgstr "اضافه کردن"
+
+#: post-types.php:10
+msgid "Add New Product"
+msgstr "اصافه کردن محصول جدید"
+
+#: post-types.php:11
+msgid "New Product"
+msgstr "محصول جدید"
+
+#: post-types.php:12
+msgid "Edit Product"
+msgstr "ویرایش محصول"
+
+#: post-types.php:13
+msgid "View Product"
+msgstr "مشاهده‌ی محصول"
+
+#: post-types.php:14
+msgid "All Product"
+msgstr "تمام محصولات"
+
+#: post-types.php:15
+msgid "Search Product"
+msgstr "جستجوی محصولات"
+
+#: post-types.php:16
+msgid "Parent Product:"
+msgstr "محصول والد:"
+
+#: post-types.php:17
+msgid "No product found."
+msgstr "هیچ محصولی یافت نشد."
+
+#: post-types.php:18
+msgid "No product found in Trash."
+msgstr "هیچ محصولی در زباله دان یافت نشد."
+
+#: post-types.php:19
+msgid "Product Cover Image"
+msgstr "عکس شاخص محصول"
+
+#: post-types.php:20
+msgid "Set cover image"
+msgstr "تنظیم عکس شاخص"
+
+#: post-types.php:21
+msgid "Remove cover image"
+msgstr "حذف عکس شاخص"
+
+#: post-types.php:22
+msgid "Use as cover image"
+msgstr "استفاده به عنوان عکس شاخص"
+
+#: post-types.php:23
+msgid "Product archives"
+msgstr "آرشیو محصولات"
+
+#: post-types.php:24
+msgid "Insert into book"
+msgstr ""
+
+#: post-types.php:25
+msgid "Uploaded to this book"
+msgstr ""
+
+#: post-types.php:26
+msgid "Filter product list"
+msgstr ""
+
+#: post-types.php:27
+msgid "Product list navigation"
+msgstr ""
+
+#: post-types.php:28
+msgid "Product list"
+msgstr ""
+
+#: post-types.php:73
+msgid "Animal Types"
+msgstr ""
+
+#: post-types.php:74 post-types.php:83
+msgid "Animal Type"
+msgstr ""
+
+#: post-types.php:75
+msgid "Search Animal Types"
+msgstr ""
+
+#: post-types.php:76
+msgid "All Animal Types"
+msgstr ""
+
+#: post-types.php:77
+msgid "Parent Animal Type"
+msgstr ""
+
+#: post-types.php:78
+msgid "Parent Animal Type:"
+msgstr ""
+
+#: post-types.php:79
+msgid "Edit Animal Type"
+msgstr ""
+
+#: post-types.php:80
+msgid "Update Animal Type"
+msgstr ""
+
+#: post-types.php:81
+msgid "Add New Animal Type"
+msgstr ""
+
+#: post-types.php:82
+msgid "New Animal Type Name"
+msgstr ""

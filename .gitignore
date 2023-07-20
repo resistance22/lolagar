@@ -1,0 +1,5 @@
+wp-content/*/*
+wp-content/index.php
+!wp-content/plugins/studioMarkazi
+!wp-content/themes/lolagar
+db_data

@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  #Database
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: "unless-stopped"
+    environment:
+      MYSQL_ROOT_PASSWORD: "RootExamplePassword"
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpresspassword
+    networks:
+      - lg_network
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - '8090:80'
+    restart: ""
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpresspassword
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DEBUG: 1
+    networks:
+      - lg_network
+
+networks:
+  lg_network:
+
+
+volumes:
+  db_data:
